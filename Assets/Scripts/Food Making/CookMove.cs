@@ -24,9 +24,9 @@ public class CookMove : MonoBehaviour
 
     private void OnMouseDown()
     {
-        GetComponent<Transform>().position = new Vector3(-0.0152646303f, Click.spawnPosition.y, 5.16599989f);
+        GetComponent<Transform>().position = new Vector3(GameFlow.plateXpos, Click.spawnPosition.y, 5.16599989f);
         Click.spawnPosition.y += 0.025f;
-        GameFlow.plateValue += foodValue;
+        GameFlow.plateValue[GameFlow.plateNum] += foodValue;
         stillCooking = false;
     }
 

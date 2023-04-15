@@ -3500,7 +3500,7 @@ GameObject:
   - component: {fileID: 3766623775711839110}
   - component: {fileID: 2126209082064866285}
   - component: {fileID: -7282522449930091006}
-  - component: {fileID: -5380208170707332282}
+  - component: {fileID: -8733951375097591805}
   m_Layer: 0
   m_Name: Bulka_gora_RB
   m_TagString: Untagged
@@ -3684,9 +3684,9 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &-5380208170707332282
+--- !u!114 &-8733951375097591805
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3695,7 +3695,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6280864748358841144}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f954c4511b21d4849ad14b9af14a1ab0, type: 3}
+  m_Script: {fileID: 11500000, guid: 772975780b5469941b0b1939837580f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &6569697186212017531

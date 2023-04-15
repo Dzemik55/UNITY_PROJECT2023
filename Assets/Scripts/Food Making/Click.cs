@@ -22,25 +22,25 @@ public class Click : MonoBehaviour
     {
         if (gameObject.name == "Bulka_dol")
         {
-            Instantiate(cloneObj, new Vector3(-0.0152646303f, spawnPosition.y, 5.16599989f), cloneObj.rotation);
+            Instantiate(cloneObj, new Vector3(GameFlow.plateXpos, spawnPosition.y, 5.16599989f), cloneObj.rotation);
             spawnPosition.y += 0.025f;
             Debug.Log(Click.spawnPosition.y);
         }
         if (gameObject.name == "Bulka_gora")
         {
-            Instantiate(cloneObj, new Vector3(-0.0152646303f, spawnPosition.y, 5.16599989f), cloneObj.rotation);
+            Instantiate(cloneObj, new Vector3(GameFlow.plateXpos, spawnPosition.y, 5.16599989f), cloneObj.rotation);
             spawnPosition.y += 0.025f;
             Debug.Log(Click.spawnPosition.y);
         }
         if (gameObject.name == "Ser")
         {
-            Instantiate(cloneObj, new Vector3(-0.0152646303f, spawnPosition.y, 5.16599989f), cloneObj.rotation);
+            Instantiate(cloneObj, new Vector3(GameFlow.plateXpos, spawnPosition.y, 5.16599989f), cloneObj.rotation);
             spawnPosition.y += 0.025f;
             Debug.Log(Click.spawnPosition.y);
         }
         if (gameObject.name == "Bekon")
         {
-            Instantiate(cloneObj, new Vector3(-0.0152646303f, spawnPosition.y, 5.16599989f), cloneObj.rotation);
+            Instantiate(cloneObj, new Vector3(GameFlow.plateXpos, spawnPosition.y, 5.16599989f), cloneObj.rotation);
             spawnPosition.y += 0.025f;
             Debug.Log(Click.spawnPosition.y);
         }
@@ -50,7 +50,7 @@ public class Click : MonoBehaviour
             Instantiate(cloneObj, new Vector3(0.5f, -2.197392f + 0.1f, 4.71999979f), cloneObj.rotation);
         }
 
-        GameFlow.plateValue += foodValue;
-        Debug.Log(GameFlow.plateValue + " " + GameFlow.orderValue);
+        GameFlow.plateValue[GameFlow.plateNum] += foodValue;
+        Debug.Log(GameFlow.plateValue[GameFlow.plateNum] + " " + GameFlow.orderValue[GameFlow.plateNum]);
     }
 }

@@ -9,7 +9,7 @@ public class PlayerPickUpDrop : MonoBehaviour
 
 
 
-    private ObjectGrabbable objectGrabbable;
+    public  ObjectGrabbable objectGrabbable;
 
     // Update is called once per frame
 

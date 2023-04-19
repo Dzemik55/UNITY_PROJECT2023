@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 4481265874588589119}
   m_Layer: 0
   m_Name: RB_Roast_Slice 1
-  m_TagString: Untagged
+  m_TagString: FoodConstructor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

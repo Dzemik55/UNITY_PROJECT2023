@@ -38,15 +38,15 @@ public class Navigation : MonoBehaviour
             }
             if (Vector3.Distance(transform.position, Destination.transform.position) < 0.001f)
             {
-                Debug.Log("Iloœæ miejsc przy stole:" + Destination.transform.childCount);
+                //Debug.Log("Iloœæ miejsc przy stole:" + Destination.transform.childCount);
                 if (Destination.transform.childCount > 0)
                 {
                     GameObject miejsce = Destination.transform.Find("Miejsce").gameObject;
-                    Debug.Log("Miejsce zajête:" + miejsce.GetComponent<isTaken>().Occupied);
+                    //Debug.Log("Miejsce zajête:" + miejsce.GetComponent<isTaken>().Occupied);
                     if (miejsce.GetComponent<isTaken>().Occupied == false)
                     {
-                        Debug.Log(miejsce.transform.position);
-                        Debug.Log(transform.position);
+                        //Debug.Log(miejsce.transform.position);
+                        //Debug.Log(transform.position);
                         transform.LookAt(miejsce.transform);
                         Destination = miejsce;
                         seatFound = true;

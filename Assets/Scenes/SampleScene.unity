@@ -135,8 +135,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 029a0ebb2050cdd45a0fedbbf1f5121f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialSpawnPosition: {x: 0, y: 0, z: 0}
-  CurrentSpawnPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &48613249
 GameObject:
   m_ObjectHideFlags: 0
@@ -1104,7 +1102,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlateIndicator
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3506576690048879357, guid: 832e4e4106bdfb444b687cc8427711b4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1287,8 +1286,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 029a0ebb2050cdd45a0fedbbf1f5121f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialSpawnPosition: {x: 0, y: 0, z: 0}
-  CurrentSpawnPosition: {x: 0, y: 0, z: 0}
 --- !u!1001 &1271973501
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2040,8 +2037,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 029a0ebb2050cdd45a0fedbbf1f5121f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialSpawnPosition: {x: 0, y: 0, z: 0}
-  CurrentSpawnPosition: {x: 0, y: 0, z: 0}
 --- !u!4 &1777365463 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4490257326247362, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
@@ -2183,7 +2178,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1199256737894896}
   m_LocalRotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -2.177, z: 5.24}
+  m_LocalPosition: {x: 0, y: -2.164, z: 5.24}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

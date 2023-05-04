@@ -8,7 +8,6 @@ public class CookMove : MonoBehaviour
     private bool stillCooking = true;
     Material newMaterial;
     Texture newTexture;
-    Renderer renderer;
     Bounds bounds;
     Click click;
     float objHeight;
@@ -17,8 +16,7 @@ public class CookMove : MonoBehaviour
         meatMaterial = GetComponent<MeshRenderer>();
         newMaterial = Resources.Load<Material>("Patty");
         newTexture = Resources.Load<Texture2D>("Patty");
-        renderer = gameObject.GetComponent<Renderer>();
-        bounds = renderer.bounds;
+        bounds = gameObject.GetComponent<Renderer>().bounds;
         objHeight = bounds.size.y;
         StartCoroutine(cookTimer());
     }

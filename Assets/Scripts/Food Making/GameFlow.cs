@@ -20,9 +20,7 @@ public class GameFlow : MonoBehaviour
         PlatesArray[0] = GameObject.Find("plate01");
         PlatesArray[1] = GameObject.Find("plate02");
         PlatesArray[2] = GameObject.Find("plate03");
-         Debug.Log(PlatesArray[0].gameObject.name);
-        Debug.Log(PlatesArray[1].gameObject.name);
-        Debug.Log(PlatesArray[2].gameObject.name);
+
     }
 
 

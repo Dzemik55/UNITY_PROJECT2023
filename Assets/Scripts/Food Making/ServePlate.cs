@@ -6,8 +6,8 @@ public class ServePlate : MonoBehaviour
     public bool FarEnoguh = false;
     public Vector3 position;
     public Vector3 currentPosition;
-    public ObjectGrabbable objectGrabbable;
-    public PlayerPickUpDrop playerPickUpDrop;
+    ObjectGrabbable objectGrabbable;
+    PlayerPickUpDrop playerPickUpDrop;
 
 
     void Start()
@@ -15,12 +15,11 @@ public class ServePlate : MonoBehaviour
         position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
     }
 
-    [System.Obsolete]
+
     void Update()
     {
-        currentPosition = new Vector3(transform.position.x, transform.position.y, transform.position.z);
 
-        float distance = Vector3.Distance(transform.position, position);
+        /*float distance = Vector3.Distance(transform.position, position);
         if (transform.GetChildCount() > 0)
         {
             Transform firstChild = transform.GetChild(0);
@@ -34,7 +33,7 @@ public class ServePlate : MonoBehaviour
                     transform.position = position;
                 }
             }
-        }
+        }*/
     }
 
     private void OnMouseDown()
@@ -44,7 +43,21 @@ public class ServePlate : MonoBehaviour
             Debug.Log("correct");
            
         }
+    }
 
-        GameFlow.emptyPlateNow = transform.position.x;
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (!collision.gameObject.CompareTag("FoodConstructor"))
+        {
+            if (playerPickUpDrop.objectGrabbable == null)
+            {
+                if (transform.childCount > 0)
+                {
+                    Transform firstChild = transform.GetChild(0);
+                    Destroy(firstChild.gameObject);
+                }
+                transform.position = position;
+            }
+        }
     }
 }

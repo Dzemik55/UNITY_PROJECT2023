@@ -5,15 +5,13 @@ public class Click : MonoBehaviour
     public Transform cloneObj;
     public int foodValue;
     public  Vector3 spawnPosition = new Vector3(GameFlow.plateXpos, -2.17700005f, 5.16599989f);
-    Renderer renderer;
     Bounds bounds;
     float objHeight;
     void Start()
     {
-        renderer = gameObject.GetComponent<Renderer>();
-        bounds = renderer.bounds;
+        bounds = gameObject.GetComponent<Renderer>().bounds;
         objHeight = bounds.size.y;
-        spawnPosition.y = GameFlow.PlatesArray[GameFlow.plateNum].gameObject.transform.position.y;
+        spawnPosition.y = GameFlow.PlatesArray[GameFlow.plateNum].transform.position.y;
         Debug.Log("Start: Wysokoœæ spawnu: " + spawnPosition.y);
 
     }
@@ -25,6 +23,7 @@ public class Click : MonoBehaviour
         {
             spawnPosition.y = GameFlow.PlatesArray[GameFlow.plateNum].gameObject.transform.position.y;
         }
+
     }
 
     private void OnMouseDown()
